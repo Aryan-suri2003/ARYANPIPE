@@ -6,8 +6,9 @@ pipeline {
         stage('Checkout') {
             steps {
                 checkout scm
-                RUN echo "ARYAN DEBUG"
-RUN npm list next
+                bat 'dir'
+                bat 'type frontend\\Dockerfile'
+                bat 'type frontend\\package.json'
             }
         }
 
