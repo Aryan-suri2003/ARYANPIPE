@@ -5,6 +5,6 @@ COPY package*.json ./
 RUN npm install
 ENV PATH=/app/node_modules/.bin:$PATH
 COPY . .
-RUN npm run build
+RUN npx next build
 EXPOSE 3000
 CMD ["npm","start"]
