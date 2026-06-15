@@ -6,6 +6,7 @@ COPY package*.json ./
 
 RUN npm install
 
+RUN echo "ARYAN DEBUG"
 RUN npm list next
 RUN ls -la node_modules/.bin
 
